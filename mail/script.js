@@ -13,12 +13,24 @@ console.log(listaMail.lenght);
 
 //verifico che la mail sia contenuta nel mio array
 
+var emailTrovata = false;
+
 for( var i = 0; i < listaMail.length; i++ ) {
 
     if (listaMail[i] === mailUtente) {
-        alert('la mail è presente')
+        emailTrovata = true;
     }
 }
+
+if (emailTrovata === true) {
+    alert('mail trovata');
+} else {
+    alert('non ho trovato nessuna mail');
+}
+
+
+
+
 
 
 
